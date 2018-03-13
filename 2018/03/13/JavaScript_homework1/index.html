@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport"content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+  
+  
+  <title>  JavaScript_homework1 |   Nayo </title>
+
+ 
+  
+    <link rel="icon" href="/images/favicon.png">
+  
+
+
+  <link rel="stylesheet" href="/style.min.css"> 
+</head>  
+  <body>   
+    <header class="header">
+	
+  <nav class="header-nav">       
+	
+  	<span class="iconfont icon-menu mobile-toggle"></span>  
+
+    <a class="header-logo" href="/"><span>Nayo</a>  
+
+    <div class="header-menu">          
+              
+            
+
+              <a class="header-menu-link" id="header-menu-home" href="/">首页</a>     
+
+            
+            
+            
+
+              <a class="header-menu-link" id="header-menu-archives" href="/archives">归档</a>     
+
+            
+            
+            
+
+              <a class="header-menu-link" id="header-menu-categories" href="/categories">分类</a>     
+
+            
+            
+            
+
+              <a class="header-menu-link" id="header-menu-tags" href="/tags">标签</a>     
+
+            
+            
+            
+
+              <a class="header-menu-link" id="header-menu-about" href="/about">关于</a>     
+
+            
+            
+            
+
+              <a class="iconfont icon-menu-search header-menu-link" id="header-menu-search"></a>
+
+            
+                
+    </div>  
+    
+  </nav>
+</header>   
+
+    <div class="container">       
+      
+        
+
+          <section id="main">  
+
+        
+
+        <article class="post">
+
+	  
+	<div class="post-header slideDownMin center">
+
+	<span class="post-title">	
+		JavaScript_homework1
+	</span>
+
+	
+	<div class="post-info">
+
+		<time class="post-time"><span class="iconfont icon-date"></span>
+		2018/03/13 	
+		</time>
+		
+				
+
+				<span class="post-meta">		
+				<span class="iconfont icon-category"></span>
+				<a class="category-link" href="/categories/homework/">homework</a>
+				</span>
+		
+			
+
+		
+				
+				<span class="post-meta">
+				<span class="iconfont icon-tag"></span>
+				<a class="tag-link" href="/tags/JavaScript/">JavaScript</a>
+				</span>			
+			
+
+
+		
+
+		
+		
+
+		<span class="post-words"><span class="iconfont icon-words"></span>
+		6358
+		</span>
+
+				
+	
+	</div> 
+
+</div> 
+
+
+	  <div class="post-content slideDownMin">
+
+		
+
+	  	<h2 id="基本网页编辑"><a href="#基本网页编辑" class="headerlink" title="基本网页编辑"></a>基本网页编辑</h2><blockquote>
+<p>【任务1-1】实现Q-Walking E&amp;S购物列表页面中的菜单导航栏。<br>【任务1-2】实现Q-Walking E&amp;S购物列表页面中的左侧导航栏。<br>【任务1-3】实现Q-Walking E&amp;S购物列表页面中的商品展示区。<br>【任务1-4】实现Q-Walking E&amp;S购物列表页面中的版权区域。<br><a id="more"></a></p>
+</blockquote>
+<h3 id="【任务1-1】实现Q-Walking-E-amp-S购物列表页面中的菜单导航栏。"><a href="#【任务1-1】实现Q-Walking-E-amp-S购物列表页面中的菜单导航栏。" class="headerlink" title="【任务1-1】实现Q-Walking E&amp;S购物列表页面中的菜单导航栏。"></a>【任务1-1】实现Q-Walking E&amp;S购物列表页面中的菜单导航栏。</h3><ul>
+<li>1.项目代码</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 菜单导航栏 strat--&gt;</span><br><span class="line">&lt;div class=&quot;nav_bg&quot;&gt;</span><br><span class="line">	&lt;div class=&quot;nav_content&quot;&gt;</span><br><span class="line">		&lt;ul class=&quot;nav&quot;&gt;</span><br><span class="line">			&lt;li&gt;&lt;a href=&quot;shoppingIndex.html&quot; class=&quot;white&quot;&gt;首页&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">			&lt;li class=&quot;nac_active&quot;&gt;</span><br><span class="line">				&lt;a href=&quot;shopping.html&quot; class=&quot;white&quot;&gt;最新上架&lt;/a&gt;</span><br><span class="line">			&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;品牌活动&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;原厂直供&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;团购&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;限时抢购&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;促销打折&lt;/li&gt;</span><br><span class="line">		&lt;/ul&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;!--菜单导航栏 end--&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>2.网页效果<br><img src="http://img.blog.csdn.net/20180313201642796?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1eml3ZWlf/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></li>
+</ul>
+<hr>
+<h3 id="【任务1-2】实现Q-Walking-E-amp-S购物列表页面中的左侧导航栏。"><a href="#【任务1-2】实现Q-Walking-E-amp-S购物列表页面中的左侧导航栏。" class="headerlink" title="【任务1-2】实现Q-Walking E&amp;S购物列表页面中的左侧导航栏。"></a>【任务1-2】实现Q-Walking E&amp;S购物列表页面中的左侧导航栏。</h3><ul>
+<li><p>1.项目代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--购物分类 start--&gt;</span><br><span class="line">&lt;ul class=&quot;menu&quot;&gt;</span><br><span class="line">	&lt;li&gt;&lt;span class=&quot;title&quot;&gt;女装&lt;/span&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;span class=&quot;red_dot&quot;&gt;&lt;/span&gt;&lt;a href=&quot;#&quot;&gt;上衣&lt;/a&gt;</span><br><span class="line">		&lt;span class=&quot;right_arrow&quot;&gt;&lt;/span&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;span class=&quot;red_dot&quot;&gt;&lt;/span&gt;&lt;a href=&quot;#&quot;&gt;下衣&lt;/a&gt;</span><br><span class="line">		&lt;span class=&quot;right_arrow&quot;&gt;&lt;/span&gt;&lt;/li&gt;	</span><br><span class="line">	&lt;li&gt;&lt;span class=&quot;red_dot&quot;&gt;&lt;/span&gt;&lt;a href=&quot;#&quot;&gt;连衣裙&lt;/a&gt;</span><br><span class="line">		&lt;span class=&quot;right_arrow&quot;&gt;&lt;/span&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;span class=&quot;red_dot&quot;&gt;&lt;/span&gt;&lt;a href=&quot;#&quot;&gt;内衣&lt;/a&gt;</span><br><span class="line">		&lt;span class=&quot;right_arrow&quot;&gt;&lt;/span&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;span class=&quot;title&quot;&gt;男装&lt;/span&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;span class=&quot;red_dot&quot;&gt;&lt;/span&gt;&lt;a href=&quot;#&quot;&gt;T恤&lt;/a&gt;</span><br><span class="line">		&lt;span class=&quot;right_arrow&quot;&gt;&lt;/span&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;span class=&quot;red_dot&quot;&gt;&lt;/span&gt;&lt;a href=&quot;#&quot;&gt;短裤&lt;/a&gt;</span><br><span class="line">		&lt;span class=&quot;right_arrow&quot;&gt;&lt;/span&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;span class=&quot;red_dot&quot;&gt;&lt;/span&gt;&lt;a href=&quot;#&quot;&gt;衬衫&lt;/a&gt;</span><br><span class="line">		&lt;span class=&quot;right_arrow&quot;&gt;&lt;/span&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;span class=&quot;title&quot;&gt;童装&lt;/span&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;span class=&quot;red_dot&quot;&gt;&lt;/span&gt;&lt;a href=&quot;#&quot;&gt;上衣&lt;/a&gt;</span><br><span class="line">		&lt;span class=&quot;right_arrow&quot;&gt;&lt;/span&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;span class=&quot;red_dot&quot;&gt;&lt;/span&gt;&lt;a href=&quot;#&quot;&gt;裤子&lt;/a&gt;</span><br><span class="line">		&lt;span class=&quot;right_arrow&quot;&gt;&lt;/span&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;span class=&quot;title&quot;&gt;运动&lt;/span&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;span class=&quot;red_dot&quot;&gt;&lt;/span&gt;&lt;a href=&quot;#&quot;&gt;运动裤&lt;/a&gt;</span><br><span class="line">		&lt;span class=&quot;right_arrow&quot;&gt;&lt;/span&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;span class=&quot;red_dot&quot;&gt;&lt;/span&gt;&lt;a href=&quot;#&quot;&gt;跑步鞋&lt;/a&gt;</span><br><span class="line">		&lt;span class=&quot;right_arrow&quot;&gt;&lt;/span&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;!--购物分类 end--&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.网页效果<br><img src="http://img.blog.csdn.net/20180313201444553?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1eml3ZWlf/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+</ul>
+<hr>
+<h3 id="【任务1-3】实现Q-Walking-E-amp-S购物列表页面中的商品展示区。"><a href="#【任务1-3】实现Q-Walking-E-amp-S购物列表页面中的商品展示区。" class="headerlink" title="【任务1-3】实现Q-Walking E&amp;S购物列表页面中的商品展示区。"></a>【任务1-3】实现Q-Walking E&amp;S购物列表页面中的商品展示区。</h3><ul>
+<li><p>1.项目代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--中间区 start--&gt;</span><br><span class="line">&lt;div class=&quot;middle&quot;&gt;</span><br><span class="line">	&lt;h1 class=&quot;pic_title&quot;&gt;最新上架&lt;/h1&gt;</span><br><span class="line">	&lt;div class=&quot;pic_list&quot;&gt;</span><br><span class="line">		&lt;dl&gt;</span><br><span class="line">			&lt;div&gt;&lt;a href=&quot;shoppingDetail.html&quot; target=&quot;_blank&quot;&gt;</span><br><span class="line">				&lt;img src=&quot;images/shopshow/yifu1.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;</span><br><span class="line">			&lt;dt&gt;&lt;span class=&quot;price&quot;&gt;¥198.00元&lt;/span&gt;</span><br><span class="line">				&lt;span class=&quot;font12&quot;&gt;324人购买&lt;/span&gt;&lt;/dt&gt;</span><br><span class="line">			&lt;dd&gt;冬季新款牛仔外套加厚连帽毛领加绒牛仔棉衣&lt;/dd&gt;</span><br><span class="line">		&lt;/dl&gt;</span><br><span class="line">		&lt;dl&gt;</span><br><span class="line">			&lt;div&gt;&lt;img src=&quot;images/shopshow/yifu2.jpg&quot;&gt;&lt;/div&gt;</span><br><span class="line">			&lt;dt&gt;&lt;span class=&quot;price&quot;&gt;¥69.00元&lt;/span&gt;</span><br><span class="line">				&lt;span class=&quot;font12&quot;&gt;534人购买&lt;/span&gt;&lt;/dt&gt;</span><br><span class="line">			&lt;dd&gt;2015夏新款韩版 透气舒适简约半截袖T恤衫&lt;/dd&gt;</span><br><span class="line">		&lt;/dl&gt;</span><br><span class="line">		&lt;dl&gt;</span><br><span class="line">			&lt;div&gt;&lt;img src=&quot;images/shopshow/yifu3.jpg&quot;&gt;&lt;/div&gt;</span><br><span class="line">			&lt;dt&gt;&lt;span class=&quot;price&quot;&gt;¥160.00元&lt;/span&gt;</span><br><span class="line">				&lt;span class=&quot;font12&quot;&gt;643人购买&lt;/span&gt;&lt;/dt&gt;</span><br><span class="line">			&lt;dd&gt;韩版甜美气质亮片热气球字母中长款圆领T恤&lt;/dd&gt;</span><br><span class="line">		&lt;/dl&gt;</span><br><span class="line">		&lt;dl&gt;</span><br><span class="line">			&lt;div&gt;&lt;img src=&quot;images/shopshow/yifu4.jpg&quot;&gt;&lt;/div&gt;</span><br><span class="line">			&lt;dt&gt;&lt;span class=&quot;price&quot;&gt;¥210.00元&lt;/span&gt;</span><br><span class="line">				&lt;span class=&quot;font12&quot;&gt;678人购买&lt;/span&gt;&lt;/dt&gt;</span><br><span class="line">			&lt;dd&gt;2015款秋新款甜美学院立领中袖套头格子衬衫娃娃衫&lt;/dd&gt;</span><br><span class="line">		&lt;/dl&gt;</span><br><span class="line">		&lt;dl&gt;</span><br><span class="line">			&lt;div&gt;&lt;img src=&quot;images/shopshow/yifu5.jpg&quot;&gt;&lt;/div&gt;</span><br><span class="line">			&lt;dt&gt;&lt;span class=&quot;price&quot;&gt;¥99.00元&lt;/span&gt;</span><br><span class="line">				&lt;span class=&quot;font12&quot;&gt;6991人购买&lt;/span&gt;&lt;/dt&gt;</span><br><span class="line">			&lt;dd&gt;韩版甜美气质甜美学院立领格子衬衫&lt;/dd&gt;</span><br><span class="line">		&lt;/dl&gt;</span><br><span class="line">		&lt;dl&gt;</span><br><span class="line">			&lt;div&gt;&lt;img src=&quot;images/shopshow/yifu6.jpg&quot;&gt;&lt;/div&gt;</span><br><span class="line">			&lt;dt&gt;&lt;span class=&quot;price&quot;&gt;¥150.00元&lt;/span&gt;</span><br><span class="line">				&lt;span class=&quot;font12&quot;&gt;658人购买&lt;/span&gt;&lt;/dt&gt;</span><br><span class="line">			&lt;dd&gt;冬季新款立领中袖套头格子衬衫娃娃衫&lt;/dd&gt;</span><br><span class="line">		&lt;/dl&gt;</span><br><span class="line">		&lt;dl&gt;</span><br><span class="line">			&lt;div&gt;&lt;img src=&quot;images/shopshow/yifu7.jpg&quot;&gt;&lt;/div&gt;</span><br><span class="line">			&lt;dt&gt;&lt;span class=&quot;price&quot;&gt;¥110.00元&lt;/span&gt;</span><br><span class="line">				&lt;span class=&quot;font12&quot;&gt;378人购买&lt;/span&gt;&lt;/dt&gt;</span><br><span class="line">			&lt;dd&gt;2015款秋新款甜美学院立领中袖套头格子衬衫娃娃衫&lt;/dd&gt;</span><br><span class="line">		&lt;/dl&gt;</span><br><span class="line">		&lt;dl&gt;</span><br><span class="line">			&lt;div&gt;&lt;img src=&quot;images/shopshow/yifu8.jpg&quot;&gt;&lt;/div&gt;</span><br><span class="line">			&lt;dt&gt;&lt;span class=&quot;price&quot;&gt;¥199.00元&lt;/span&gt;</span><br><span class="line">				&lt;span class=&quot;font12&quot;&gt;655人购买&lt;/span&gt;&lt;/dt&gt;</span><br><span class="line">			&lt;dd&gt;透气舒适简约头碎花连衣裙&lt;/dd&gt;</span><br><span class="line">		&lt;/dl&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;!--中间区 end--&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.网页效果<br><img src="http://img.blog.csdn.net/20180313201512391?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1eml3ZWlf/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+</ul>
+<hr>
+<h3 id="【任务1-4】实现Q-Walking-E-amp-S购物列表页面中的版权区域。"><a href="#【任务1-4】实现Q-Walking-E-amp-S购物列表页面中的版权区域。" class="headerlink" title="【任务1-4】实现Q-Walking E&amp;S购物列表页面中的版权区域。"></a>【任务1-4】实现Q-Walking E&amp;S购物列表页面中的版权区域。</h3><ul>
+<li><p>1.项目代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--版权 start--&gt;</span><br><span class="line">&lt;div class=&quot;foot_line&quot;&gt;</span><br><span class="line">	&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;images/foot_pic.jpg&quot;&gt;&lt;/p&gt;</span><br><span class="line">		&lt;p align=&quot;center&quot; class=&quot;padding-top&quot;&gt;copyright 2015-2020 Q-Walking</span><br><span class="line">		Fashion E&amp;S 漫步时尚广场（...）版权所有&lt;br/&gt;xxxxxxxxxx xxx xx xx </span><br><span class="line">		咨询热线 xxx-xxx-xxxx xxx-xxx-xxxx</span><br><span class="line">	&lt;/p&gt;</span><br><span class="line">	&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;!-- 版权end--&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.网页效果<br><img src="http://img.blog.csdn.net/20180313201526383?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1eml3ZWlf/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</li>
+</ul>
+<hr>
+<h3 id="最终显示效果："><a href="#最终显示效果：" class="headerlink" title="最终显示效果："></a>最终显示效果：</h3><p><img src="http://img.blog.csdn.net/20180313201617133?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1eml3ZWlf/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>  <code>--end</code></p>
+  	
+
+	  </div>     
+	  
+
+	<div class="post-footer">    
+
+
+
+
+
+
+<span class="donate-btn iconfont icon-donate "></span>
+
+
+<div id="donate-box" class="sildeUpMin">
+
+	<span class="donate-cancel iconfont icon-cancel"></span>
+
+	<div class="donate-img-box">
+		<img id="donate-qr-wechat" class="donate-img no-gallery" src="/images/donate1.png"  alt="Lost">	
+		<img id="donate-qr-alipay" class="donate-img no-gallery" src="/images/donate2.png"  alt="Lost">	
+	</div>
+
+	<span class="donate-word">世界美好 你也是</span>
+
+	<div class="donate-list">
+		<span class="iconfont icon-donate-wechat"></span>
+		<span class="iconfont icon-donate-alipay"></span>
+	</div>
+
+</div>
+
+ 
+
+	
+<script id="-mob-share" 
+src="http://f1.webshare.mob.com/code/mob-share.js?appkey=21d601593a1de"></script>
+	
+	<span class="share-btn iconfont icon-share">
+	</span>
+
+
+	<div class="-mob-share sildeUpMin">
+		                  
+            <span class="iconfont  icon-share-qq -mob-share-qq" title="qq"></span>
+     	                  
+            <span class="iconfont  icon-share-weixin -mob-share-weixin" title="weixin"></span>
+     	                  
+            <span class="iconfont  icon-share-weibo -mob-share-weibo" title="weibo"></span>
+     	                  
+            <span class="iconfont  icon-share-douban -mob-share-douban" title="douban"></span>
+     	                  
+            <span class="iconfont  icon-share-facebook -mob-share-facebook" title="facebook"></span>
+     	                  
+            <span class="iconfont  icon-share-twitter -mob-share-twitter" title="twitter"></span>
+     	   
+	</div>
+	
+
+
+
+
+
+  <nav class="post-nav">
+
+      
+  
+    
+  
+
+  
+
+  <a href="/2018/03/13/markdown/">         
+
+    <span class="right"  title="Markdown 教程">下一篇 </span>  
+
+  </a>
+
+  
+  </nav>  
+
+</div> 
+	
+
+
+    <div id="comment">   
+    </div>
+
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+
+    <script src='//unpkg.com/valine@v1.1.8-beta/dist/Valine.min.js'></script>
+
+    <script>
+        new Valine({
+        el: '#comment',
+        notify:false, 
+        verify:false, 
+        app_id: 'cFM0eCo0CQ9xmBXmHi1eltol-gzGzoHsz',
+        app_key: 'oh9tizsnvV2vNvWgqEvoNtQO',  
+        path:window.location.pathname, 
+        avatar:'mm' ,
+        guest_info:['nick','mail']
+        });
+    </script>
+	
+
+</article>
+
+
+
+	<div id="toc" >		
+
+		<div class="toc-container">	
+
+		<span class="toc-contents iconfont icon-open"> 
+			<span>目录</span>
+		</span>
+
+		<ul class="toc-list"></ul>
+
+		</div>
+
+	</div>
+
+
+        </section> 
+
+    </div>        
+
+    
+    <div class="mask"></div>
+    <div id="backTop" class="iconfont icon-backtotop sildeUpMin"></div> 
+
+    
+
+        
+        <div class="search-container sildeUpMin">
+            <input type="text" placeholder="输入你想搜索的" id="search-input" class="search-input">  
+              <span class="search-cancel iconfont icon-cancel"></span>
+              <div id="search-result" class="search-result"></div>
+        </div>
+ 
+
+     <div class="mobile-menu">      
+
+      
+      <img class="mobile-menu-icon" src= "/images/favicon.png" >   
+      
+
+         
+            
+
+            <a class="mobile-menu-link" href="/">首页
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/archives">归档
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/categories">分类
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/tags">标签
+            </a>
+            
+         
+            
+
+            <a class="mobile-menu-link" href="/about">关于
+            </a>
+            
+         
+                          
+
+            <a class="mobile-menu-link mobile-menu-search" href="#">搜索 </a>                 
+            
+         
+      
+</div>     
+
+
+    
+
+<footer id="footer">
+	   
+   	 
+
+	  	
+   	
+      	 
+	 <div>
+	 	&copy;
+		2018
+		朱梓维	 
+
+	 </div>
+
+
+   
+   	 <div>
+	
+	 <a href="http://hexo.io/" target="_blank">Hexo</a>
+
+	 Theme
+
+	 <a href="https://github.com/Lemonreds/hexo-theme-Nayo" target="_blank">Nayo</a> 
+
+	 </div>	
+
+
+	
+	
+</footer>    
+    
+
+<!-- Baidu Analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?636802045446222199ae541e32c8133e"; 
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+
+
+
+
+
+<!-- 
+ -->  
+    
+    
+    <script src="/main.bundle.js"></script>        
+  </body>        
+</html>
